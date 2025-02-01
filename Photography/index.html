@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的摄影作品</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>我的摄影作品</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#gallery">作品集</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>欢迎来到我的摄影世界</h2>
+        <p>这里展示了我的一些摄影作品，希望你喜欢。</p>
+    </section>
+
+    <section id="gallery">
+        <h2>作品集</h2>
+        <!-- 切换按钮 -->
+        <div class="filter-buttons">
+            <button class="filter-button active" data-filter="all">全部</button>
+            <button class="filter-button" data-filter="landscape">横屏作品</button>
+            <button class="filter-button" data-filter="portrait">竖屏作品</button>
+        </div>
+        <!-- 作品容器 -->
+        <div class="gallery-container">
+            <!-- 横屏作品 (16:9) -->
+            <div class="gallery-item landscape">
+                <img src="photo1.jpg" alt="横屏作品1">
+            </div>
+            <div class="gallery-item landscape">
+                <img src="photo2.jpg" alt="横屏作品2">
+            </div>
+            <!-- 竖屏作品 (9:16) -->
+            <div class="gallery-item portrait">
+                <img src="photo3.jpg" alt="竖屏作品1">
+            </div>
+            <div class="gallery-item portrait">
+                <img src="photo4.png" alt="竖屏作品2">
+            </div>
+            <div class="gallery-item portrait">
+                <img src="photo5.jpg" alt="竖屏作品3">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>关于我</h2>
+        <p>Hey！大家好！我是守夜人潜，是一名热爱生活的摄影师。常年专注于自然风光和人像摄影。还记得第一次拿起相机的原因，不仅是为了定格那一刻的美好，更是为了使美梦成真！</p>
+    </section>
+
+    <section id="contact">
+        <h2>联系我</h2>
+        <form id="contact-form">
+            <label for="name">姓名:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">邮箱:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">留言:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">发送</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 我的摄影作品. 保留所有权利.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
